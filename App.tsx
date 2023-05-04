@@ -1,7 +1,9 @@
 import React from "react";
-import { Alert, Box, Button, Divider, HStack, IconButton, NativeBaseProvider, StatusBar, Text, VStack, Pressable, Badge, Spacer, Flex, TextArea, ScrollView, Center, useToast } from "native-base";
+import { Alert, Box, Button, Divider, HStack, IconButton, NativeBaseProvider, StatusBar, Text, VStack, Pressable, Badge, Spacer, Flex, TextArea, ScrollView, Center, useToast, FormControl, Stack, Input, WarningOutlineIcon } from "native-base";
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import Login from './src/Login.js';
+import Register from './src/Register.js';
 
 function AppBar() {
   return <>
@@ -117,14 +119,20 @@ function AlertBox() {
     </Center>;
 }
 
+
+
 export default function App() {
   return (
     <NativeBaseProvider>
-      <AppBar />
+      {/* <AppBar /> */}
       <ScrollView>
-        <PressableBox />
-        <ContentBox />
-        <AlertBox />
+        {/* <PressableBox /> */}
+        {/* <ContentBox /> */}
+        {/* <FormLogin /> */}
+        {/* <AlertBox /> */}
+        {/* <Login /> */}
+
+        <Register />
       </ScrollView>
     </NativeBaseProvider>
   );
